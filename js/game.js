@@ -66,10 +66,6 @@ function init() {
 }
 
 function moveMouse(e) {
-	//updatePlayer(1,e)
-}
-
-function updatePlayer(player, e) {
 	var y;
 	if(!e) {
 		e = window.event;
@@ -80,6 +76,11 @@ function updatePlayer(player, e) {
 	}
 
 	y -= canvas.offsetTop;
+	//updatePlayer(1,e)
+}
+
+function updatePlayer(player, y) {
+
 	if(y - game.playerHeight/2 >= 0 && y + game.playerHeight/2 <= canvas.height)
 		game.player.y = y;
 }
