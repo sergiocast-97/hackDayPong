@@ -1,7 +1,7 @@
 
 
 var goingup;
-var player1move = firebase.database().ref('moves/player1/y');
+var player1move = firebase.database().ref('moves/player1/gy');
 player1move.on('value', function(snapshot) {
   if(game){
     //console.log(snapshot.val())
