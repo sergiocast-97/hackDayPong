@@ -66,7 +66,7 @@ function init() {
 }
 
 function moveMouse(e) {
-	updatePlayer(1,e)
+	//updatePlayer(1,e)
 }
 
 function updatePlayer(player, e) {
