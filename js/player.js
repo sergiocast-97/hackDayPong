@@ -23,10 +23,13 @@
             writeUserData(data.dm.y,data.dm.gy);
         });
     }).catch(function(e){
+      document.getElementById("y").innerHTML = "ERROR!";
       // Catch if the DeviceOrientation or DeviceMotion is not supported by the browser or device
     });
 
 function writeUserData(y, gy) {
+  document.getElementById("y").innerHTML = ""+y+"";
+  document.getElementById("gy").innerHTML = ""+gy+"";
   firebase.database().ref('moves/player/' + player).set({
     'y': y,
     'gy': gy
