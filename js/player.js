@@ -3,6 +3,7 @@
 
     gn.init().then(function(){
         gn.start(function(data){
+          console.log("here!")
             // Process:
             // data.do.alpha    ( deviceorientation event alpha value )
             // data.do.beta     ( deviceorientation event beta value )
