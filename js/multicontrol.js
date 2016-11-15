@@ -9,7 +9,7 @@ player1move.on('value', function(snapshot) {
     var adjacent = (canvas.height/2);
     var opposite = adjacent * angle;
     y = opposite;
-    console.log(y  
+    console.log(y);  
     updatePlayer(1,y);
   }
 });
