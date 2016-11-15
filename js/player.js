@@ -31,7 +31,7 @@ console.log("here!")
 function writeUserData(y, gy) {
   document.getElementById("y").innerHTML = ""+y+"";
   document.getElementById("gy").innerHTML = ""+gy+"";
-  firebase.database().ref('moves/player/' + player).set({
+  firebase.database().ref('moves/player' + player +"/").set({
     'y': y,
     'gy': gy
   });
