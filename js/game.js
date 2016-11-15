@@ -81,8 +81,11 @@ function moveMouse(e) {
 
 function updatePlayer(player, y) {
 	console.log(player+":"+y);
-	if(y - game.playerHeight/2 >= 0 && y + game.playerHeight/2 <= canvas.height)
-		game.player.y = y;
+	if(game){
+		if(y - game.playerHeight/2 >= 0 && y + game.playerHeight/2 <= canvas.height){
+			game.player.y = y;
+		}
+	}
 }
 
 function playSound(snd) {
