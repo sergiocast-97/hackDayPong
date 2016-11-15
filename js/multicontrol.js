@@ -7,7 +7,7 @@ player1move.on('value', function(snapshot) {
     //console.log(snapshot.val())
     var y = snapshot.val();
     document.getElementById('angle').innerHTML = ""+snapshot.val()+"      :    "+y;
-    y = game.player.y + (2*y);
+    y = game.player.y + (2+(2*y));
     if(y>canvas.height){y = canvas.height;}
     if(y<0){y=0;}
 
