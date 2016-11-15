@@ -1,13 +1,13 @@
 
 
 var goingup;
-var player1move = firebase.database().ref('moves/player1/gy');
+var player1move = firebase.database().ref('moves/player1/y');
 player1move.on('value', function(snapshot) {
   if(game){
     //console.log(snapshot.val())
     var y = snapshot.val();
-    document.getElementById('angle').innerHTML = y;
-    y = game.player.y + (5*y);
+    document.getElementById('angle').innerHTML = ""+snapshot.val()+"      :    "+y;
+    y = game.player.y + (2*y);
     if(y>canvas.height){y = canvas.height;}
     if(y<0){y=0;}
 
