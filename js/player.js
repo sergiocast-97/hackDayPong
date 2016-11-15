@@ -31,7 +31,7 @@ console.log("here!")
             // data.dm.alpha    ( devicemotion event rotationRate alpha value )
             // data.dm.beta     ( devicemotion event rotationRate beta value )
             // data.dm.gamma    ( devicemotion event rotationRate gamma value )
-            writeUserData(data.do.alpha,data.dm.gy);
+            writeUserData(data.dm.y,data.dm.gy);
         });
     }).catch(function(e){
       document.getElementById("y").innerHTML = "ERROR!";
