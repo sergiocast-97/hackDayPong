@@ -31,7 +31,7 @@ console.log("here!")
             // data.dm.alpha    ( devicemotion event rotationRate alpha value )
             // data.dm.beta     ( devicemotion event rotationRate beta value )
             // data.dm.gamma    ( devicemotion event rotationRate gamma value )
-            writeUserData(data.dm.beta,data.dm.alpha,data.dm.gama);
+            writeUserData(data.dm.beta,data.dm.alpha,data.dm.gamma);
         });
     }).catch(function(e){
       document.getElementById("y").innerHTML = "ERROR!";
@@ -39,8 +39,9 @@ console.log("here!")
     });
 
 function writeUserData(b,a,c) {
-  document.getElementById("y").innerHTML = ""+y+"";
-  document.getElementById("gy").innerHTML = ""+gy+"";
+  document.getElementById("b").innerHTML = ""+b+"";
+  document.getElementById("a").innerHTML = ""+a+"";
+  document.getElementById("c").innerHTML = ""+c+"";
   firebase.database().ref('moves/player' + player +"/").set({
     'y': b,
     'a': a,
