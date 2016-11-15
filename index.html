@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>LEAP Test</title>
+  <meta name="description" content="MultiPong">
+  <meta name="author" content="Wildfireone">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="gamediv">
+  	<div id="titleScreen">
+  		<h1>Pong!</h1>
+  		<p>This game is based on the HTML5 elements <b>canvas</b> and <b>audio</b>. With some simple javascript to make it work.</p>
+  		<p>To play this game you need a modern web browser with support for HTML5. Audio only works with Firefox 3.5+ at the moment.</p>
+  		<p class="vcard">Made by <a href="http://daverix.net/" class="url fn" target="_top" rel="me">David Laurell</a></p>
+  		<button id="playButton">Play!</button>
+  	</div>
+  	<div id="playScreen">
+  		<canvas width="640" height="360" id="gameCanvas">
+  			<p>Your browser <b>does not</b> support HTML5!</p>
+  			<p>Visit the <a href="http://daverix.net/projects/pong/">project page</a> for more info.</p>
+  		</canvas>
+  		<div id="computerScore">0</div>
+  		<div id="playerScore">0</div>
+  		<div class="ingamebuttons">
+  			<button id="pauseButton">Pause</button>
+  			<button id="soundButton">Turn off sound</button>
+  		</div>
+  		<div id="pauseText">Paused</div>
+  	</div>
+</div>
+
+  <footer>
+    <audio id="bounceLeft" autobuffer>
+      <source src="ping.wav" type="audio/x-wav" />
+      <source src="ping.ogg" type="audio/ogg" />
+    </audio>
+    <audio id="bounceRight" autobuffer>
+      <source src="pong.wav" type="audio/x-wav" />
+      <source src="pong.ogg" type="audio/ogg" />
+    </audio>
+    <audio id="bounceWall" autobuffer>
+      <source src="bom.wav" type="audio/x-wav" />
+      <source src="bom.ogg" type="audio/ogg" />
+    </audio>
+    <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCK-CDRtv0_8NPXwnhLvr0IE6eIyUq9zh8",
+        authDomain: "mulipong.firebaseapp.com",
+        databaseURL: "https://mulipong.firebaseio.com",
+        storageBucket: "mulipong.appspot.com",
+        messagingSenderId: "803069359277"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="js/game.js"></script>
+  </footer>
+</body>
+</html>
