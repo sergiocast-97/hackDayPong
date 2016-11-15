@@ -31,18 +31,19 @@ console.log("here!")
             // data.dm.alpha    ( devicemotion event rotationRate alpha value )
             // data.dm.beta     ( devicemotion event rotationRate beta value )
             // data.dm.gamma    ( devicemotion event rotationRate gamma value )
-            writeUserData(data.dm.y,data.dm.gy);
+            writeUserData(data.dm.beta,data.dm.alpha,data.dm.gama);
         });
     }).catch(function(e){
       document.getElementById("y").innerHTML = "ERROR!";
       // Catch if the DeviceOrientation or DeviceMotion is not supported by the browser or device
     });
 
-function writeUserData(y, gy) {
+function writeUserData(b,a,c) {
   document.getElementById("y").innerHTML = ""+y+"";
   document.getElementById("gy").innerHTML = ""+gy+"";
   firebase.database().ref('moves/player' + player +"/").set({
-    'y': y,
-    'gy': gy
+    'y': b,
+    'a': a,
+    'c': c
   });
 }
