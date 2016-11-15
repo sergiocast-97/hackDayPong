@@ -1,6 +1,6 @@
 /* player script , reads mobile y value and passes to firebase for game client */
     var gn = new GyroNorm();
-
+console.log("here!")
     gn.init().then(function(){
         gn.start(function(data){
           console.log("here!")
