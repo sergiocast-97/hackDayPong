@@ -5,13 +5,13 @@ html, body {
 }
 
 /* ARTICLE WRAPPER */
-.wrapper{
+#gamediv{
     max-width: 1280px;
     /* - - - - - - - - - - ASK */
     margin: 0px auto;
 }
 /* After the wrapper - trick - */
-.wrapper:after{
+#gamediv:after{
   content: "";
   clear:both;
   width:0px;
