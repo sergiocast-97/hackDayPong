@@ -20,7 +20,7 @@ html, body {
 }
 
 #gamediv{
-    background-color: #303030;
+    background-color: rgb(30, 30, 30);
     /* Clear the header floating */
     clear: both;
     padding: 50px 0;
