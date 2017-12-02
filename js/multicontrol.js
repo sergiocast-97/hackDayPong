@@ -15,7 +15,7 @@ player1move.on('value', function(snapshot) {
     document.getElementById('angle').innerHTML = ""+snapshot.val()+"      :    "+y;
   }
 });
-
+/*
 var player2move = firebase.database().ref('moves/player2/a');
 player2move.on('value', function(snapshot){
   if(game){
@@ -29,7 +29,7 @@ player2move.on('value', function(snapshot){
       updatePlayer2(1,y);
       document.getElementById('angle').innerHTML = ""+snapshot.val()+"     :   "+y;
   }
-});
+});*/
 
 //var angle = Math.tan(snapshot.val());
 //var adjacent = (canvas.height/2);
