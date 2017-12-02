@@ -20,7 +20,7 @@ html, body {
   display: block;
 }
 
-.gamediv{
+#gamediv{
     background-color: #fff;
     /* Clear the header floating */
     clear: both;
