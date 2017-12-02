@@ -206,14 +206,14 @@ function draw() {
 		}
 
 		// left player
-		ctx.fillStyle = "rgba(128,128,128,.8)";
+		ctx.fillStyle = "rgba(240,240,240,.8)";
 		ctx.fillRect(0, game.computer.y - game.playerHeight / 2,
 				game.playerWidth, game.playerHeight);
 		// right player
 		ctx.fillRect(canvas.width - game.playerWidth, game.player.y
 				- game.playerHeight / 2, game.playerWidth, game.playerHeight);
 
-		ctx.fillStyle = "rgba(192,192,192,8)";
+		ctx.fillStyle = "rgba(240,240,240,8)";
 		ctx.fillRect(game.ball.x - game.ball.radius, game.ball.y
 				- game.ball.radius, game.ball.radius * 2, game.ball.radius * 2);
 	}
