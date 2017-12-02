@@ -44,10 +44,13 @@ a:hover {
 
 #playButton{
     background-color: rgb(240,240,240);
+    font-family: 'Press Start 2P';
 }
 #pauseButton{
     background-color: rgb(240,240,240);
+    font-family: 'Press Start 2P';
 }
 #soundButton{
     background-color: rgb(240,240,240);
+    font-family: 'Press Start 2P';
 }
