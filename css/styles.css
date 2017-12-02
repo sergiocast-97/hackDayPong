@@ -27,7 +27,7 @@ html, body {
     /* Clear the header floating */
     clear: both;
     padding: 50px 0;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P';
     color: rgb(240,240,240);
 }
 
@@ -40,4 +40,8 @@ a{
 /* Links change colour */
 a:hover {
     color: #BE807C;
+}
+
+#playButton{
+    background-color: rgb(240,240,240);
 }
