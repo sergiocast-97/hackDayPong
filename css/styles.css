@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     width: 100%;
     height: 100%;
+    background-color: rgb(30, 30, 30);
 }
 
 /* ARTICLE WRAPPER */
@@ -20,7 +21,6 @@ html, body {
 }
 
 #gamediv{
-    background-color: rgb(30, 30, 30);
     /* Clear the header floating */
     clear: both;
     padding: 50px 0;
